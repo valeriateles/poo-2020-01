@@ -1,0 +1,44 @@
+//Primeira classe
+
+package primeiroprojeto;
+
+/**
+ * @author Valéria
+ */
+public class HelloWorld {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+    
+}
+
+//Segunda classe
+package primeiroprojeto;
+
+import java.util.Date;
+
+
+public class Cliente {
+    String nome;
+    String endereço;
+    Date dataNascimento;
+    int idade;
+    int cPF;
+}
+
+//Terceira classe
+package primeiroprojeto;
+
+import java.util.Date;
+
+public class Serviço {
+    String tipoServiço;
+    float valorServiço;
+    Date dataEntrada;
+    Date dataEntrega;
+    int notaFiscal;
+}
