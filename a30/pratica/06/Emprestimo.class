@@ -1,0 +1,65 @@
+
+package pratica06;
+
+import java.util.Date;
+
+
+
+public class Emprestimo {
+     
+        private Livro obra;
+        private Pessoa funcionario;
+        private Pessoa usuario;
+        private Date data;
+
+    public Emprestimo(Livro obra, Pessoa funcionario, Pessoa usuario, Date data) {
+        setObra(obra);
+        setFuncionario(funcionario);
+        setUsuario(usuario);
+        setData(data);
+    }
+
+    public Livro getObra() {
+        return obra;
+    }
+
+    public void setObra(Livro obra) {
+        this.obra = obra;
+    }
+
+    public Pessoa getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(Pessoa funcionario) {
+        this.funcionario = funcionario;
+    }
+
+    public Pessoa getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Pessoa usuario) {
+        this.usuario = usuario;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "Emprestimo da obra: " + getObra() + 
+                "Funcionario: " + getFuncionario() + 
+                "Usuario: " + getUsuario() + 
+                "Data: " + getData() + ".";
+    }
+    
+        
+        
+    
+}
