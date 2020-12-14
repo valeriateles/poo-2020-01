@@ -1,0 +1,31 @@
+
+package pratica10;
+
+
+public class Pratica10(TestaAnimal) {
+
+    
+    public static void main(String[] args) {
+        Animal vaca1 = new Animal("Mimosa");
+        Animal vaca2 = new Animal("Josefa");
+        Animal gato1 = new Animal ("Bichano");
+        Animal cachorro1 = new Animal("Pipoca");
+        Animal cachorro2 = new Animal("Kiara");
+        Animal cachorro3 = new Animal("Jumanji");
+        
+        Amizade amizade = new Amizade();
+        amizade.criaAmizade(vaca1, cachorro1, cachorro2);
+        amizade.criaAmizade(cachorro3, cachorro2);
+        amizade.criaAmizade(vaca1 ,vaca2);
+        amizade.criaAmizade(vaca1 ,gato1);
+        amizade.removeAmizade(vaca1, cachorro1);
+        
+        System.out.println("Vaca " + vaca1 + "\nAmigos: " + vaca1.amigosAnimal());
+        System.out.println("\nVaca " + vaca2 + "\nAmigos: " + vaca2.amigosAnimal());
+        System.out.println("\nGato " + gato1 + "\nAmigos: " + gato1.amigosAnimal());
+        System.out.println("\nCachorro " + cachorro1 + "\nAmigos: " + cachorro1.amigosAnimal());
+        System.out.println("\nCachorro " + cachorro2 + "\nAmigos: " + cachorro2.amigosAnimal());
+        System.out.println("\nCachorro " + cachorro3 + "\nAmigos: " + cachorro3.amigosAnimal());
+    }
+    
+}
