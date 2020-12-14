@@ -1,1 +1,6 @@
+Porque fazemos os metodos privates e quando vamos inserir os getter e setter eles devem publicos?
 
+Na pratica 10, o exercicio foi feito com a biblioteca MAP, eu não consegui fazer, nem entende-la muito bem. Por isso fiz com ArrayList, contudo 
+tive que criar outra classe para poder fazer a relação de amizade entre as instancias. Como funciona a MAP?
+
+Na Pratica 11 fiz com ArrayList e professor fez com HashSet, ví que os comandos foram identicos, qual a diferença entre eles?
