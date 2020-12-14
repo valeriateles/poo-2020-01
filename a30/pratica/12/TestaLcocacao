@@ -1,0 +1,28 @@
+
+package pratica12;
+
+import java.util.Calendar;
+
+
+public class Pratica12 {//TestaLocacao
+
+    public static void main(String[] args) {
+        Carro gol =new Carro("ONU 0101");
+        Motorista m= new Motorista("João", "2019A56");
+        Locacao loca1= new Locacao();
+        Calendar i = Calendar.getInstance(); // entender isso
+        Calendar f = Calendar.getInstance();
+        i.set(2004,4,1);
+        f.set(2004,4,5);
+        loca1.dataLocacao(i.getTime(),f.getTime());
+        loca1.rodagem(150,490);
+        loca1.setValorDia(32F);
+        loca1.setValorKm(1.2F);
+        loca1.setCarro(gol);
+        loca1.setMotorista(m);
+        
+       System.out.println(loca1);
+        
+    }
+    
+}
