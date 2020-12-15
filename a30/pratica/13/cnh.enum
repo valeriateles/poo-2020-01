@@ -1,0 +1,7 @@
+package pratica12;
+
+
+public enum CNH {
+    A, B, C, D;
+   
+}
