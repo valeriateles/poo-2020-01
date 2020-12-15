@@ -1,0 +1,35 @@
+
+package pratica12;
+
+import java.util.Calendar;
+import static pratica12.CNH.A;
+import static pratica12.CNH.C;
+import static pratica12.Categoria.luxo;
+import static pratica12.Categoria.simples;
+import static pratica12.Categoria.superluxo;
+import static pratica12.Tipo.passeio;
+import static pratica12.Tipo.utilitario;
+
+
+public class Pratica12 {
+
+    public static void main(String[] args) {
+        Carro gol =new Carro("ONU 0101", utilitario);
+        Motorista m= new Motorista("João", "2019A56", C, 8);
+        Locacao loca1= new Locacao();
+        Calendar i = Calendar.getInstance(); // entender isso
+        Calendar f = Calendar.getInstance();
+        i.set(2004,4,1);
+        f.set(2004,4,5);
+        loca1.dataLocacao(i.getTime(),f.getTime());
+        loca1.rodagem(150,490);
+        loca1.setValorDia(32F);
+        loca1.setValorKm(1.2F);
+        loca1.setCarro(gol);
+        loca1.setMotorista(m);
+        
+       System.out.println(loca1);
+        
+    }
+    
+}
